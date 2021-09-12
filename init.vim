@@ -1,8 +1,9 @@
-set relativenumber
-set termguicolors
-set cursorline
-set cursorcolumn
-set splitbelow splitright
-
 colorscheme one
 set background=light
+
+set cursorcolumn
+set cursorline
+set path+=.,**
+set relativenumber
+set splitbelow splitright
+set termguicolors
