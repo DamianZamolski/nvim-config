@@ -20,5 +20,5 @@ buffer.smartindent = true
 buffer.softtabstop = 2
 buffer.tabstop = 2
 
-require('mappings')
 require('lspconfig').tsserver.setup{...}
+require('mappings')
