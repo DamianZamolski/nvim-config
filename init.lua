@@ -10,6 +10,7 @@ global.hidden = true
 global.termguicolors = true
 
 window.cursorcolumn = true
+window.signcolumn = 'yes'
 window.cursorline = true
 window.relativenumber = true
 window.wrap = true
@@ -20,3 +21,4 @@ buffer.softtabstop = 2
 buffer.tabstop = 2
 
 require('mappings')
+require('lspconfig').tsserver.setup{...}
