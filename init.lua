@@ -13,7 +13,7 @@ window.cursorcolumn = true
 window.signcolumn = 'yes'
 window.cursorline = true
 window.relativenumber = true
-window.wrap = true
+window.wrap = false
 
 buffer.expandtab = true
 buffer.smartindent = true
