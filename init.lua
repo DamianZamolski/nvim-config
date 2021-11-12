@@ -15,10 +15,5 @@ window.cursorline = true
 window.relativenumber = true
 window.wrap = false
 
-buffer.expandtab = true
-buffer.smartindent = true
-buffer.softtabstop = 2
-buffer.tabstop = 2
-
 require('lspconfig').tsserver.setup{...}
 require('mappings')
