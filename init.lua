@@ -8,6 +8,7 @@ cmd('colorscheme base16-one-light')
 global.background = 'light'
 global.hidden = true
 global.termguicolors = true
+global.completeopt = "menu,menuone,noselect"
 
 window.cursorcolumn = true
 window.signcolumn = 'yes'
