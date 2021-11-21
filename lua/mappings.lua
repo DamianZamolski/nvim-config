@@ -1,6 +1,6 @@
 local map = vim.api.nvim_set_keymap
 
-map('n', '<Space>', '', {})
+map('', '<Space>', '', {})
 vim.g.mapleader = ' '
 
 map('', '<leader>1', ':sort<cr>', {noremap=true})
