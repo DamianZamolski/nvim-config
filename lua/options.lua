@@ -1,16 +1,18 @@
 local cmd = vim.cmd
 cmd 'colorscheme base16-one-light'
 
-local global = vim.o
-global.background = 'light'
-global.completeopt = 'menu,menuone,noselect,noinsert'
-global.hidden = true
-global.termguicolors = true
-
-local window = vim.wo
-window.cursorcolumn = true
-window.cursorline = true
-window.number = true
-window.relativenumber = true
-window.signcolumn = 'yes'
-window.wrap = false
+local option = vim.o
+option.background = 'light'
+option.completeopt = 'menu,menuone,noselect,noinsert'
+option.cursorcolumn = true
+option.cursorline = true
+option.expandtab = true
+option.hidden = true
+option.number = true
+option.relativenumber = true
+option.shiftwidth = 2
+option.signcolumn = 'yes'
+option.softtabstop = 2
+option.tabstop = 2
+option.termguicolors = true
+option.wrap = false
