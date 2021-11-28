@@ -9,7 +9,8 @@ global.termguicolors = true
 
 local window = vim.wo
 window.cursorcolumn = true
-window.signcolumn = 'yes'
 window.cursorline = true
+window.number = true
 window.relativenumber = true
+window.signcolumn = 'yes'
 window.wrap = false
