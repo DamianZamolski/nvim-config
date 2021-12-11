@@ -7,7 +7,6 @@ option.completeopt = 'menu,menuone,noselect,noinsert'
 option.cursorcolumn = true
 option.cursorline = true
 option.expandtab = true
-option.hidden = true
 option.number = true
 option.relativenumber = true
 option.shiftwidth = 2
