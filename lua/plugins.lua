@@ -1,5 +1,6 @@
 require('packer').startup(function()
   use('hrsh7th/cmp-buffer')
+  use({ 'evanleck/vim-svelte', requires = 'evanleck/vim-svelte' })
   use('hrsh7th/cmp-cmdline')
   use('hrsh7th/cmp-nvim-lsp')
   use('hrsh7th/cmp-nvim-lua')
@@ -10,7 +11,7 @@ require('packer').startup(function()
   use('neovim/nvim-lspconfig')
   use('tpope/vim-surround')
   use('wbthomason/packer.nvim')
-  use({'nvim-telescope/telescope.nvim', requires = 'nvim-lua/plenary.nvim' })
+  use({ 'nvim-telescope/telescope.nvim', requires = 'nvim-lua/plenary.nvim' })
 end)
 
 vim.cmd([[
