@@ -99,6 +99,11 @@ _G.packer_plugins = {
     path = "/home/dz/.local/share/nvim/site/pack/packer/start/cmp-vsnip",
     url = "https://github.com/hrsh7th/cmp-vsnip"
   },
+  ["markdown-preview.nvim"] = {
+    loaded = true,
+    path = "/home/dz/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim",
+    url = "https://github.com/iamcco/markdown-preview.nvim"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/dz/.local/share/nvim/site/pack/packer/start/nvim-cmp",
@@ -129,11 +134,6 @@ _G.packer_plugins = {
     path = "/home/dz/.local/share/nvim/site/pack/packer/start/vim-surround",
     url = "https://github.com/tpope/vim-surround"
   },
-  ["vim-svelte"] = {
-    loaded = true,
-    path = "/home/dz/.local/share/nvim/site/pack/packer/start/vim-svelte",
-    url = "https://github.com/evanleck/vim-svelte"
-  },
   ["vim-vsnip"] = {
     loaded = true,
     path = "/home/dz/.local/share/nvim/site/pack/packer/start/vim-vsnip",
@@ -147,5 +147,6 @@ if should_profile then save_profiles() end
 end)
 
 if not no_errors then
+  error_msg = error_msg:gsub('"', '\\"')
   vim.api.nvim_command('echohl ErrorMsg | echom "Error in packer_compiled: '..error_msg..'" | echom "Please check your config for correctness" | echohl None')
 end

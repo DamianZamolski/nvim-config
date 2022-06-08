@@ -1,4 +1,5 @@
+require('plugins')
 require('lsp')
 require('mappings')
 require('options')
-require('plugins')
+require('nvim-cmp')
