@@ -31,3 +31,4 @@ local capabilities = require'cmp_nvim_lsp'.update_capabilities(vim.lsp.protocol.
 local lspconfig = require'lspconfig'
 lspconfig.pyright.setup{ capabilities = capabilities }
 lspconfig.tsserver.setup{ capabilities = capabilities }
+lspconfig.eslint.setup{}
