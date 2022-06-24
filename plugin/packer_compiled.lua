@@ -129,6 +129,16 @@ _G.packer_plugins = {
     path = "/home/dz/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["vim-js"] = {
+    loaded = true,
+    path = "/home/dz/.local/share/nvim/site/pack/packer/start/vim-js",
+    url = "https://github.com/yuezk/vim-js"
+  },
+  ["vim-jsx-pretty"] = {
+    loaded = true,
+    path = "/home/dz/.local/share/nvim/site/pack/packer/start/vim-jsx-pretty",
+    url = "https://github.com/maxmellon/vim-jsx-pretty"
+  },
   ["vim-surround"] = {
     loaded = true,
     path = "/home/dz/.local/share/nvim/site/pack/packer/start/vim-surround",
