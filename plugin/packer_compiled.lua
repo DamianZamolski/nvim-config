@@ -99,6 +99,11 @@ _G.packer_plugins = {
     path = "/home/dz/.local/share/nvim/site/pack/packer/start/cmp-vsnip",
     url = "https://github.com/hrsh7th/cmp-vsnip"
   },
+  ["git-blame.nvim"] = {
+    loaded = true,
+    path = "/home/dz/.local/share/nvim/site/pack/packer/start/git-blame.nvim",
+    url = "https://github.com/f-person/git-blame.nvim"
+  },
   ["markdown-preview.nvim"] = {
     loaded = true,
     path = "/home/dz/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim",
@@ -114,6 +119,11 @@ _G.packer_plugins = {
     path = "/home/dz/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-treesitter"] = {
+    loaded = true,
+    path = "/home/dz/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/dz/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -128,16 +138,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/dz/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
-  },
-  ["vim-js"] = {
-    loaded = true,
-    path = "/home/dz/.local/share/nvim/site/pack/packer/start/vim-js",
-    url = "https://github.com/yuezk/vim-js"
-  },
-  ["vim-jsx-pretty"] = {
-    loaded = true,
-    path = "/home/dz/.local/share/nvim/site/pack/packer/start/vim-jsx-pretty",
-    url = "https://github.com/maxmellon/vim-jsx-pretty"
   },
   ["vim-surround"] = {
     loaded = true,
