@@ -109,6 +109,11 @@ _G.packer_plugins = {
     path = "/home/dz/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim",
     url = "https://github.com/iamcco/markdown-preview.nvim"
   },
+  neoformat = {
+    loaded = true,
+    path = "/home/dz/.local/share/nvim/site/pack/packer/start/neoformat",
+    url = "https://github.com/sbdchd/neoformat"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/dz/.local/share/nvim/site/pack/packer/start/nvim-cmp",

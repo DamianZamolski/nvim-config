@@ -1,5 +1,5 @@
 local cmd = vim.cmd
-cmd 'colorscheme base16-one-light'
+cmd('colorscheme base16-one-light')
 
 local option = vim.o
 option.background = 'light'
