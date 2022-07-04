@@ -14,6 +14,7 @@ require('packer').startup(function()
 	use('sbdchd/neoformat')
 	use('tpope/vim-surround')
 	use('wbthomason/packer.nvim')
+	use({ 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' })
 	use({ 'nvim-telescope/telescope.nvim', requires = 'nvim-lua/plenary.nvim' })
 end)
 

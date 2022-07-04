@@ -145,6 +145,11 @@ local no_errors, error_msg = pcall(function()
 			path = '/home/dz/.local/share/nvim/site/pack/packer/start/plenary.nvim',
 			url = 'https://github.com/nvim-lua/plenary.nvim',
 		},
+		['telescope-fzf-native.nvim'] = {
+			loaded = true,
+			path = '/home/dz/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim',
+			url = 'https://github.com/nvim-telescope/telescope-fzf-native.nvim',
+		},
 		['telescope.nvim'] = {
 			loaded = true,
 			path = '/home/dz/.local/share/nvim/site/pack/packer/start/telescope.nvim',

@@ -3,5 +3,11 @@ local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protoco
 local lspconfig = require('lspconfig')
 lspconfig.cssls.setup({ capabilities = capabilities, cmd = { 'vscode-css-languageserver', '--stdio' } })
 lspconfig.eslint.setup({ capabilities = capabilities })
+
+lspconfig.java_language_server.setup({
+	capabilities = capabilities,
+	cmd = { '/usr/share/java/java-language-server/lang_server_linux.sh' },
+})
+
 lspconfig.pyright.setup({ capabilities = capabilities })
 lspconfig.tsserver.setup({ capabilities = capabilities })
