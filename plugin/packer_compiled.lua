@@ -155,6 +155,11 @@ local no_errors, error_msg = pcall(function()
 			path = '/home/dz/.local/share/nvim/site/pack/packer/start/telescope.nvim',
 			url = 'https://github.com/nvim-telescope/telescope.nvim',
 		},
+		['vim-commentary'] = {
+			loaded = true,
+			path = '/home/dz/.local/share/nvim/site/pack/packer/start/vim-commentary',
+			url = 'https://github.com/tpope/vim-commentary',
+		},
 		['vim-surround'] = {
 			loaded = true,
 			path = '/home/dz/.local/share/nvim/site/pack/packer/start/vim-surround',
