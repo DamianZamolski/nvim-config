@@ -13,7 +13,7 @@ map('n', '<leader>/', '<cmd>lua require("telescope.builtin").live_grep()<cr>', {
 map('n', '<leader><cr>', ':Explore<cr>', { noremap = true })
 map('n', '<leader><esc>', '<cmd>nohlsearch<cr>', { noremap = true })
 map('n', '<leader>D', '"_d$', { noremap = true })
-map('n', '<leader>F', '<cmd>Neoformat<cr>', { noremap = true })
+map('n', '<leader>F', '<cmd>lua vim.lsp.buf.formatting()<cr>', { noremap = true })
 map('n', '<leader>H', ':help <c-r><c-w><cr>', { noremap = true })
 map('n', '<leader>Q', '<cmd>quit!<cr>', { noremap = true })
 map('n', '<leader>S', ':%substitute//g<left><left>', { noremap = true })
@@ -39,3 +39,4 @@ map('n', 'gb', '<cmd>lua require("telescope.builtin").buffers()<cr>', { noremap 
 map('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<cr>', { noremap = true })
 map('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<cr>', { noremap = true })
 map('n', 'gr', '<cmd>lua vim.lsp.buf.references()<cr>', { noremap = true })
+map('n', 'gt', '<cmd>lua vim.lsp.buf.type_definition()<cr>', { noremap = true })
