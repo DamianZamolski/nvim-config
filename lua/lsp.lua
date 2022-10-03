@@ -3,6 +3,7 @@ local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protoco
 local lspconfig = require('lspconfig')
 lspconfig.bashls.setup({ capabilities = capabilities })
 lspconfig.cssls.setup({ capabilities = capabilities, cmd = { 'vscode-css-languageserver', '--stdio' } })
+lspconfig.emmet_ls.setup({ capabilities = capabilities })
 lspconfig.eslint.setup({ capabilities = capabilities })
 
 lspconfig.java_language_server.setup({
