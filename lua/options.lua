@@ -3,7 +3,6 @@ cmd('colorscheme base16-one-light')
 
 local option = vim.o
 option.background = 'light'
-option.completeopt = 'menu,menuone,noselect,noinsert'
 option.cursorcolumn = true
 option.cursorline = true
 option.expandtab = true
