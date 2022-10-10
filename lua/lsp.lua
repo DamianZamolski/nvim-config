@@ -7,6 +7,7 @@ lspconfig.cssls.setup({ capabilities = capabilities, cmd = { 'vscode-css-languag
 lspconfig.emmet_ls.setup({ capabilities = capabilities })
 lspconfig.eslint.setup({ capabilities = capabilities })
 lspconfig.pyright.setup({ capabilities = capabilities })
+lspconfig.svelte.setup({ capabilities = capabilities })
 lspconfig.tsserver.setup({ capabilities = capabilities })
 
 lspconfig.java_language_server.setup({
