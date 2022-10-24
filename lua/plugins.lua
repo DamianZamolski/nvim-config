@@ -20,6 +20,7 @@ require('packer').startup(function()
 	use({ 'ThePrimeagen/harpoon', requires = 'nvim-lua/plenary.nvim' })
 	use({ 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' })
 	use({ 'nvim-telescope/telescope.nvim', requires = 'nvim-lua/plenary.nvim' })
+	use({ 'nvim-tree/nvim-tree.lua', requires = 'nvim-tree/nvim-web-devicons' })
 	use({ 'nvim-treesitter/nvim-treesitter-context', requires = 'nvim-treesitter/nvim-treesitter' })
 end)
 
