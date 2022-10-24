@@ -1,2 +1,3 @@
+config-path := ~/.config/nvim
 link:
-	ln --symbolic $(realpath .) ~/.config/nvim
+	[ -d $(config-path) ] || ln --symbolic $(realpath .) $(config-path)
