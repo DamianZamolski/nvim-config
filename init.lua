@@ -1,3 +1,4 @@
+require('dap-setup')
 require('git-blame')
 require('lsp')
 require('mappings')
