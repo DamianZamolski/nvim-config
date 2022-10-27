@@ -1,7 +1,6 @@
 require('dap-setup')
 require('git-blame')
 require('lsp')
-require('lualine-setup')
 require('mappings')
 require('nvim-cmp')
 require('nvim-tree-setup')
