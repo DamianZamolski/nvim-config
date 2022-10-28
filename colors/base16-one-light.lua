@@ -5,22 +5,22 @@
 -- by Chris Kempson (https://github.com/chriskempson)
 -- One Light scheme by Daniel Pfeifer (http://github.com/purpleKarrot)
 
-local gui00 = "#fafafa"
-local gui01 = "#f0f0f1"
-local gui02 = "#e5e5e6"
-local gui03 = "#a0a1a7"
-local gui04 = "#696c77"
-local gui05 = "#383a42"
-local gui06 = "#202227"
-local gui07 = "#000000"
-local gui08 = "#ca1243"
-local gui09 = "#d75f00"
-local gui0A = "#c18401"
-local gui0B = "#50a14f"
-local gui0C = "#0184bc"
-local gui0D = "#4078f2"
-local gui0E = "#a626a4"
-local gui0F = "#986801"
+local gui00 = '#fafafa'
+local gui01 = '#f0f0f1'
+local gui02 = '#e5e5e6'
+local gui03 = '#a0a1a7'
+local gui04 = '#696c77'
+local gui05 = '#383a42'
+local gui06 = '#202227'
+local gui07 = '#000000'
+local gui08 = '#ca1243'
+local gui09 = '#d75f00'
+local gui0A = '#c18401'
+local gui0B = '#50a14f'
+local gui0C = '#0184bc'
+local gui0D = '#4078f2'
+local gui0E = '#a626a4'
+local gui0F = '#986801'
 
 local cterm00 = 0
 local cterm03 = 8
@@ -39,15 +39,19 @@ local cterm06 = 13
 local cterm09 = 9
 local cterm0F = 14
 
-vim.cmd [[
+vim.cmd([[
   highlight clear
   syntax reset
-]]
-vim.g.colors_name = "base16-one-light"
+]])
+vim.g.colors_name = 'base16-one-light'
 
--- Vim editor colors                    fg bg ctermfg ctermbg attr guisp
-vim.api.nvim_set_hl(0, 'Normal', { fg = gui07, bg = gui00, ctermfg = cterm05, ctermbg = cterm00 })
 vim.api.nvim_set_hl(0, 'Bold', { bold = true })
+vim.api.nvim_set_hl(0, 'ColorColumn', { bg = gui01, ctermbg = cterm01 })
+vim.api.nvim_set_hl(0, 'Conceal', { fg = gui0D, bg = gui00, ctermfg = cterm0D, ctermbg = cterm00 })
+vim.api.nvim_set_hl(0, 'Cursor', { fg = gui00, bg = gui05, ctermfg = cterm00, ctermbg = cterm05 })
+vim.api.nvim_set_hl(0, 'CursorColumn', { bg = gui01, ctermbg = cterm01 })
+vim.api.nvim_set_hl(0, 'CursorLine', { bg = gui01, ctermbg = cterm01 })
+vim.api.nvim_set_hl(0, 'CursorLineNr', { fg = gui04, bg = gui01, ctermfg = cterm04, ctermbg = cterm01 })
 vim.api.nvim_set_hl(0, 'Debug', { fg = gui08, ctermfg = cterm08 })
 vim.api.nvim_set_hl(0, 'Directory', { fg = gui0D, ctermfg = cterm0D })
 vim.api.nvim_set_hl(0, 'Error', { fg = gui00, bg = gui08, ctermfg = cterm00, ctermbg = cterm08 })
@@ -57,39 +61,36 @@ vim.api.nvim_set_hl(0, 'FoldColumn', { fg = gui0C, bg = gui01, ctermfg = cterm0C
 vim.api.nvim_set_hl(0, 'Folded', { fg = gui03, bg = gui01, ctermfg = cterm03, ctermbg = cterm01 })
 vim.api.nvim_set_hl(0, 'IncSearch', { fg = gui01, bg = gui09, ctermfg = cterm01, ctermbg = cterm09 })
 vim.api.nvim_set_hl(0, 'Italic', {})
+vim.api.nvim_set_hl(0, 'LineNr', { fg = gui03, bg = gui01, ctermfg = cterm03, ctermbg = cterm01 })
 vim.api.nvim_set_hl(0, 'Macro', { fg = gui08, ctermfg = cterm08 })
 vim.api.nvim_set_hl(0, 'MatchParen', { bg = gui03, ctermbg = cterm03 })
 vim.api.nvim_set_hl(0, 'ModeMsg', { fg = gui0B, ctermfg = cterm0B })
 vim.api.nvim_set_hl(0, 'MoreMsg', { fg = gui0B, ctermfg = cterm0B })
+vim.api.nvim_set_hl(0, 'NonText', { fg = gui03, ctermfg = cterm03 })
+vim.api.nvim_set_hl(0, 'Normal', { fg = gui07, bg = gui00, ctermfg = cterm05, ctermbg = cterm00 })
+vim.api.nvim_set_hl(0, 'PMenu', { fg = gui07, bg = gui01, ctermfg = cterm05, ctermbg = cterm01 })
+vim.api.nvim_set_hl(0, 'PMenuSel', { fg = gui01, bg = gui05, ctermfg = cterm01, ctermbg = cterm05 })
 vim.api.nvim_set_hl(0, 'Question', { fg = gui0D, ctermfg = cterm0D })
+vim.api.nvim_set_hl(0, 'QuickFixLine', { bg = gui01, ctermbg = cterm01 })
 vim.api.nvim_set_hl(0, 'Search', { fg = gui01, bg = gui0A, ctermfg = cterm01, ctermbg = cterm0A })
-vim.api.nvim_set_hl(0, 'Substitute', { fg = gui01, bg = gui0A, ctermfg = cterm01, ctermbg = cterm0A })
+vim.api.nvim_set_hl(0, 'SignColumn', { fg = gui03, bg = gui01, ctermfg = cterm03, ctermbg = cterm01 })
 vim.api.nvim_set_hl(0, 'SpecialKey', { fg = gui03, ctermfg = cterm03 })
+vim.api.nvim_set_hl(0, 'StatusLine', { fg = gui04, bg = gui02, ctermfg = cterm04, ctermbg = cterm02 })
+vim.api.nvim_set_hl(0, 'StatusLineNC', { fg = gui03, bg = gui01, ctermfg = cterm03, ctermbg = cterm01 })
+vim.api.nvim_set_hl(0, 'Substitute', { fg = gui01, bg = gui0A, ctermfg = cterm01, ctermbg = cterm0A })
+vim.api.nvim_set_hl(0, 'TabLine', { fg = gui03, bg = gui01, ctermfg = cterm03, ctermbg = cterm01 })
+vim.api.nvim_set_hl(0, 'TabLineFill', { fg = gui03, bg = gui01, ctermfg = cterm03, ctermbg = cterm01 })
+vim.api.nvim_set_hl(0, 'TabLineSel', { fg = gui0B, bg = gui01, ctermfg = cterm0B, ctermbg = cterm01 })
+vim.api.nvim_set_hl(0, 'Title', { fg = gui0D, ctermfg = cterm0D })
 vim.api.nvim_set_hl(0, 'TooLong', { fg = gui08, ctermfg = cterm08 })
 vim.api.nvim_set_hl(0, 'Underlined', { fg = gui08, ctermfg = cterm08 })
+vim.api.nvim_set_hl(0, 'VertSplit', { fg = gui02, bg = gui02, ctermfg = cterm02, ctermbg = cterm02 })
 vim.api.nvim_set_hl(0, 'Visual', { bg = gui02, ctermbg = cterm02 })
 vim.api.nvim_set_hl(0, 'VisualNOS', { fg = gui08, ctermfg = cterm08 })
 vim.api.nvim_set_hl(0, 'WarningMsg', { fg = gui08, ctermfg = cterm08 })
 vim.api.nvim_set_hl(0, 'WildMenu', { fg = gui08, bg = gui0A, ctermfg = cterm08 })
-vim.api.nvim_set_hl(0, 'Title', { fg = gui0D, ctermfg = cterm0D })
-vim.api.nvim_set_hl(0, 'Conceal', { fg = gui0D, bg = gui00, ctermfg = cterm0D, ctermbg = cterm00 })
-vim.api.nvim_set_hl(0, 'Cursor', { fg = gui00, bg = gui05, ctermfg = cterm00, ctermbg = cterm05 })
-vim.api.nvim_set_hl(0, 'NonText', { fg = gui03, ctermfg = cterm03 })
-vim.api.nvim_set_hl(0, 'LineNr', { fg = gui03, bg = gui01, ctermfg = cterm03, ctermbg = cterm01 })
-vim.api.nvim_set_hl(0, 'SignColumn', { fg = gui03, bg = gui01, ctermfg = cterm03, ctermbg = cterm01 })
-vim.api.nvim_set_hl(0, 'StatusLine', { fg = gui04, bg = gui02, ctermfg = cterm04, ctermbg = cterm02 })
-vim.api.nvim_set_hl(0, 'StatusLineNC', { fg = gui03, bg = gui01, ctermfg = cterm03, ctermbg = cterm01 })
-vim.api.nvim_set_hl(0, 'VertSplit', { fg = gui02, bg = gui02, ctermfg = cterm02, ctermbg = cterm02 })
-vim.api.nvim_set_hl(0, 'ColorColumn', { bg = gui01, ctermbg = cterm01 })
-vim.api.nvim_set_hl(0, 'CursorColumn', { bg = gui01, ctermbg = cterm01 })
-vim.api.nvim_set_hl(0, 'CursorLine', { bg = gui01, ctermbg = cterm01 })
-vim.api.nvim_set_hl(0, 'CursorLineNr', { fg = gui04, bg = gui01, ctermfg = cterm04, ctermbg = cterm01 })
-vim.api.nvim_set_hl(0, 'QuickFixLine', { bg = gui01, ctermbg = cterm01 })
-vim.api.nvim_set_hl(0, 'PMenu', { fg = gui07, bg = gui01, ctermfg = cterm05, ctermbg = cterm01 })
-vim.api.nvim_set_hl(0, 'PMenuSel', { fg = gui01, bg = gui05, ctermfg = cterm01, ctermbg = cterm05 })
-vim.api.nvim_set_hl(0, 'TabLine', { fg = gui03, bg = gui01, ctermfg = cterm03, ctermbg = cterm01 })
-vim.api.nvim_set_hl(0, 'TabLineFill', { fg = gui03, bg = gui01, ctermfg = cterm03, ctermbg = cterm01 })
-vim.api.nvim_set_hl(0, 'TabLineSel', { fg = gui0B, bg = gui01, ctermfg = cterm0B, ctermbg = cterm01 })
+vim.api.nvim_set_hl(0, 'WinBar', { fg = gui07, bg = gui02, bold = true })
+vim.api.nvim_set_hl(0, 'WinBarNC', { fg = gui07, bg = gui02 })
 
 -- Standard syntax highlighting
 vim.api.nvim_set_hl(0, 'Boolean', { fg = gui09, ctermfg = cterm09 })
@@ -139,15 +140,15 @@ vim.api.nvim_set_hl(0, 'cssClassName', { fg = gui0E, ctermfg = cterm0E })
 vim.api.nvim_set_hl(0, 'cssColor', { fg = gui0C, ctermfg = cterm0C })
 
 -- Diff highlighting
-vim.api.nvim_set_hl(0, 'DiffAdd', { fg = gui0B, bg = gui01, ctermfg =  cterm0B, ctermbg = cterm01 })
-vim.api.nvim_set_hl(0, 'DiffChange', { fg = gui03, bg = gui01, ctermfg =  cterm03, ctermbg = cterm01 })
-vim.api.nvim_set_hl(0, 'DiffDelete', { fg = gui08, bg = gui01, ctermfg =  cterm08, ctermbg = cterm01 })
-vim.api.nvim_set_hl(0, 'DiffText', { fg = gui0D, bg = gui01, ctermfg =  cterm0D, ctermbg = cterm01 })
-vim.api.nvim_set_hl(0, 'DiffAdded', { fg = gui0B, bg = gui00, ctermfg =  cterm0B, ctermbg = cterm00 })
-vim.api.nvim_set_hl(0, 'DiffFile', { fg = gui08, bg = gui00, ctermfg =  cterm08, ctermbg = cterm00 })
-vim.api.nvim_set_hl(0, 'DiffNewFile', { fg = gui0B, bg = gui00, ctermfg =  cterm0B, ctermbg = cterm00 })
-vim.api.nvim_set_hl(0, 'DiffLine', { fg = gui0D, bg = gui00, ctermfg =  cterm0D, ctermbg = cterm00 })
-vim.api.nvim_set_hl(0, 'DiffRemoved', { fg = gui08, bg = gui00, ctermfg =  cterm08, ctermbg = cterm00 })
+vim.api.nvim_set_hl(0, 'DiffAdd', { fg = gui0B, bg = gui01, ctermfg = cterm0B, ctermbg = cterm01 })
+vim.api.nvim_set_hl(0, 'DiffChange', { fg = gui03, bg = gui01, ctermfg = cterm03, ctermbg = cterm01 })
+vim.api.nvim_set_hl(0, 'DiffDelete', { fg = gui08, bg = gui01, ctermfg = cterm08, ctermbg = cterm01 })
+vim.api.nvim_set_hl(0, 'DiffText', { fg = gui0D, bg = gui01, ctermfg = cterm0D, ctermbg = cterm01 })
+vim.api.nvim_set_hl(0, 'DiffAdded', { fg = gui0B, bg = gui00, ctermfg = cterm0B, ctermbg = cterm00 })
+vim.api.nvim_set_hl(0, 'DiffFile', { fg = gui08, bg = gui00, ctermfg = cterm08, ctermbg = cterm00 })
+vim.api.nvim_set_hl(0, 'DiffNewFile', { fg = gui0B, bg = gui00, ctermfg = cterm0B, ctermbg = cterm00 })
+vim.api.nvim_set_hl(0, 'DiffLine', { fg = gui0D, bg = gui00, ctermfg = cterm0D, ctermbg = cterm00 })
+vim.api.nvim_set_hl(0, 'DiffRemoved', { fg = gui08, bg = gui00, ctermfg = cterm08, ctermbg = cterm00 })
 
 -- Git highlighting
 vim.api.nvim_set_hl(0, 'gitcommitOverflow', { fg = gui08, ctermfg = cterm08 })
