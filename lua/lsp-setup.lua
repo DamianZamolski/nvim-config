@@ -1,12 +1,16 @@
 local lspconfig = require('lspconfig')
 local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
 
+lspconfig.astro.setup({ capabilities = capabilities })
 lspconfig.bashls.setup({ capabilities = capabilities })
 lspconfig.clangd.setup({ capabilities = capabilities })
 lspconfig.cssls.setup({ capabilities = capabilities, cmd = { 'vscode-css-languageserver', '--stdio' } })
-lspconfig.emmet_ls.setup({ capabilities = capabilities })
+-- lspconfig.emmet_ls.setup({ capabilities = capabilities })
 lspconfig.eslint.setup({ capabilities = capabilities })
+lspconfig.html.setup({ capabilities = capabilities })
+lspconfig.lemminx.setup({ capabilities = capabilities })
 lspconfig.pyright.setup({ capabilities = capabilities })
+lspconfig.sqlls.setup({ capabilities = capabilities })
 lspconfig.svelte.setup({ capabilities = capabilities })
 lspconfig.tsserver.setup({ capabilities = capabilities })
 
@@ -26,3 +30,4 @@ lspconfig.sumneko_lua.setup({
 		},
 	},
 })
+

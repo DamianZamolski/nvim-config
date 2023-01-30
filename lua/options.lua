@@ -14,5 +14,5 @@ option.signcolumn = 'yes'
 option.softtabstop = 2
 option.tabstop = 2
 option.termguicolors = true
-option.winbar = '%f%m'
+option.winbar = '%f %m'
 option.wrap = false

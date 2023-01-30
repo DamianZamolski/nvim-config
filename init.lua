@@ -1,4 +1,3 @@
-require('dap-setup')
 require('git-blame-setup')
 require('leap-setup')
 require('lsp-setup')
