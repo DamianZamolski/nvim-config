@@ -19,7 +19,7 @@ lspconfig.java_language_server.setup({
 	cmd = { '/usr/share/java/java-language-server/lang_server_linux.sh' },
 })
 
-lspconfig.sumneko_lua.setup({
+lspconfig.lua_ls.setup({
 	settings = {
 		capabilities = capabilities,
 		Lua = {
