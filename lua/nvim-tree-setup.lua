@@ -81,5 +81,6 @@ local function on_attach(bufnr)
 end
 
 require('nvim-tree').setup({
+	view = { adaptive_size = true },
 	on_attach = on_attach,
 })
