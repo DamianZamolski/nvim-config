@@ -4,8 +4,8 @@ local function map(mode, keys, command)
 	vim.keymap.set(mode, keys, command, { noremap = true })
 end
 
-map('', '<Space>', '')
 vim.g.mapleader = ' '
+map('', '<Space>', '')
 
 map('', '<c-s>', vim.lsp.buf.signature_help)
 map('', '<leader>1', ':sort i<cr>')
@@ -13,6 +13,8 @@ map('', '<leader>2', ':sort!<cr>')
 map('', '<leader>Y', '"+y$')
 map('', '<leader>y', '"+y')
 map('i', '<c-l>', vim.lsp.buf.completion)
+map('i', '<S-Tab>', '<Plug>(vsnip-jump-prev)')
+map('i', '<Tab>', '<Plug>(vsnip-jump-next)')
 map('n', '<a-j>', vim.diagnostic.goto_next)
 map('n', '<a-k>', vim.diagnostic.goto_prev)
 map('n', '<a-l>', vim.lsp.buf.code_action)
