@@ -9,6 +9,7 @@ lspconfig.cssls.setup({ capabilities = capabilities, cmd = { 'vscode-css-languag
 lspconfig.docker_compose_language_service.setup({ capabilities = capabilities })
 lspconfig.dockerls.setup({ capabilities = capabilities })
 lspconfig.eslint.setup({ capabilities = capabilities })
+lspconfig.gopls.setup({ capabilities = capabilities })
 lspconfig.html.setup({ capabilities = capabilities })
 lspconfig.lemminx.setup({ capabilities = capabilities })
 lspconfig.pyright.setup({ capabilities = capabilities })

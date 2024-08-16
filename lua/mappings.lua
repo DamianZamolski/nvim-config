@@ -5,8 +5,7 @@ local function map(mode, keys, command)
 end
 
 vim.g.mapleader = ' '
-map('', '<Space>', '')
-
+map('', '<leader>', '')
 map('', '<c-s>', vim.lsp.buf.signature_help)
 map('', '<leader>1', ':sort i<cr>')
 map('', '<leader>2', ':sort!<cr>')
@@ -47,5 +46,6 @@ map('n', 'gd', vim.lsp.buf.definition)
 map('n', 'gf', telescope.find_files)
 map('n', 'gh', telescope.help_tags)
 map('n', 'gi', vim.lsp.buf.implementation)
+map('n', 'gq', telescope.quickfix)
 map('n', 'gr', vim.lsp.buf.references)
 map('n', 'gt', vim.lsp.buf.type_definition)
