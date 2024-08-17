@@ -1,11 +1,11 @@
 return {
   'neovim/nvim-lspconfig',
   config = function()
-    local capabilities = require('cmp_nvim_lsp').default_capabilities()
     local lspconfig = require('lspconfig')
+    local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
-    lspconfig.tsserver.setup({
-      capabilities = capabilities,
-    })
+    lspconfig.lua_ls.setup({ capabilities = capabilities })
+    lspconfig.svelte.setup({ capabilities = capabilities })
+    lspconfig.tsserver.setup({ capabilities = capabilities })
   end,
 }
