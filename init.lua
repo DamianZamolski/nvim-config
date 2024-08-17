@@ -1,11 +1,5 @@
-require('git-blame-setup')
-require('leap-setup')
-require('lsp-setup')
-require('mappings')
-require('mason-setup')
-require('nvim-cmp-setup')
-require('nvim-tree-setup')
-require('options')
-require('plugins')
-require('telescope-setup')
-require('treesitter-setup')
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+vim.opt.termguicolors = true
+require('dz.lazy')
+require('dz.mappings')

@@ -1,7 +1,7 @@
 local telescope = require('telescope.builtin')
 
 local function map(mode, keys, command)
-	vim.keymap.set(mode, keys, command, { noremap = true })
+  vim.keymap.set(mode, keys, command, { noremap = true })
 end
 
 vim.g.mapleader = ' '
