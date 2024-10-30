@@ -4,7 +4,7 @@ return {
     local lspconfig = require('lspconfig')
     local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
-    for _, server in ipairs({ 'eslint', 'gopls', 'lua_ls', 'svelte', 'tsserver' }) do
+    for _, server in ipairs({ 'bashls', 'eslint', 'gopls', 'lua_ls', 'svelte', 'ts_ls' }) do
       lspconfig[server].setup({ capabilities = capabilities })
     end
   end,

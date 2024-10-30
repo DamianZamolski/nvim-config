@@ -1,12 +1,13 @@
 local telescope = require('telescope.builtin')
 
 local function map(mode, keys, command)
-  vim.keymap.set(mode, keys, command, { noremap = true })
+  vim.keymap.set(mode, keys, command, { noremap = true, silent = true })
 end
 
 vim.g.mapleader = ' '
-map('', '<leader>', '')
+
 map('', '<c-s>', vim.lsp.buf.signature_help)
+map('', '<leader>', '')
 map('', '<leader>1', ':sort i<cr>')
 map('', '<leader>2', ':sort!<cr>')
 map('', '<leader>Y', '"+y$')
@@ -36,6 +37,7 @@ map('n', '<leader>q', '<cmd>quit<cr>')
 map('n', '<leader>r', vim.lsp.buf.rename)
 map('n', '<leader>S', ':%substitute//g<left><left>')
 map('n', '<leader>s', ':substitute//g<left><left>')
+map('n', '<leader>u', '<cmd>Lazy update<cr>')
 map('n', '<leader>W', '<cmd>wall<cr>')
 map('n', '<leader>w', '<cmd>write<cr>')
 map('n', 'g/', telescope.live_grep)
